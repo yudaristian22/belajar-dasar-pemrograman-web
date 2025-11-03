@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      ul {
+        font-size: 18px;
+      }
+      /* Elemen yang menerapkan href attr */
+      a[href] {
+        color: green;
+      }
+      /* Elemen yang menerapkan nilai pada href awalan # */
+      a[href^="#"] {
+        background-color: violet;
+      }
+      /* Elemen yang menerapkan nilai pada href yang mengandung example */
+      a[href*="example"] {
+        background-color: palegreen;
+      }
+      /* Elemen yang menerapkan nilai pada href yang mengandung teks 'insensitive' tanpa mementingkan capital */
+      a[href*="insensitive" i] {
+        color: blue;
+      }
+      /* Elemen yang menerapkan nilai pada href yang diakhiri dengan org */
+      a[href$="org"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#internal">Internal Link</a></li>
+      <li><a href="https://example.com">Example Link</a></li>
+      <li><a href="#InSensitive">Insensitive Internal Link</a></li>
+      <li><a href="http://example.org">Example org Link</a></li>
+    </ul>
+  </body>
+</html>

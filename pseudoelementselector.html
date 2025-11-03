@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selector</title>
+    <style>
+      blockquote::first-letter {
+        font-size: 32px;
+        font-weight: bold;
+        color: saddlebrown;
+      }
+      /* blockquote::before,
+      blockquote::after {
+        content: '"';
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+      } */
+      /* The first line of every <p> element. */
+      /* Style for the parent element */
+      .parent {
+        color: blue;
+      }
+
+      /* Style for the parent's selected text */
+      .parent::selection {
+        background-color: yellow;
+        color: red;
+      }
+
+      /* Style for the child element */
+      .child {
+        color: green;
+      }
+
+      /* Style for the child's selected text */
+      .child::selection {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+      explicabo ipsum mlestiae necesstitatibus nesciunt possimus reprehenderit
+      sed voluptates. Aliquam aspernatur autem est nobis officia prasentium quas
+      recusandae rem.
+    </blockquote>
+    <div class="parent">
+      Parent text
+      <div class="child">Child text</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Selector</title>
+    <style>
+      .red {
+        color: red;
+      }
+      .skyblue-bg {
+        background-color: skyblue;
+      }
+      .fancy {
+        font-weight: bold;
+        text-shadow: 4px 4px 2px green;
+      }
+      h1.fancy {
+        text-shadow: 4px 4px 2px orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="red">Heading dengan teks berwarna merah</h1>
+    <p class="red">Paragraf dengan teks berwarna merah</p>
+    <p class="skyblue-bg">Paragraf dengan backgroound berwarna biru langit</p>
+    <p class="fancy skyblue-bg">Paragarf dengan gaya fancy</p>
+    <p class="fancy">Paragarf dengan gaya fancy</p>
+    <h1 class="fancy">Paragarf dengan gaya fancy</h1>
+    <p>
+      Paragraf yang menampilkan teks dengan warna standar tanpa menerapkan
+      styling
+    </p>
+  </body>
+</html>
