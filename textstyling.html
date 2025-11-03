@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Styling</title>
+
+    <style>
+      .ln2 {
+        line-height: 2;
+      }
+      .ln200 {
+        line-height: 200%;
+      }
+      .ln2em {
+        line-height: 2em;
+      }
+      .indent {
+        text-indent: 20px;
+      }
+
+      .content {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: 1px solid black;
+      }
+      .content2 {
+        width: 80%;
+        margin-bottom: 20px;
+        border: 1px solid black;
+      }
+      /* Text Align */
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+      .justify {
+        text-align: justify;
+      }
+      a {
+        text-decoration: none;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .overline {
+        text-decoration: overline;
+      }
+      .line-through {
+        text-decoration: line-through;
+      }
+
+      /* Text Transform */
+      .capitalize {
+        text-transform: capitalize;
+      }
+      .lowercase {
+        text-transform: lowercase;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .word-spacing {
+        word-spacing: 10px;
+      }
+      .letter-spacing {
+        letter-spacing: 10px;
+      }
+      .one {
+        text-shadow: 5px 5px 2px green;
+        color: white;
+        font-size: 2rem;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Line Height -->
+    <p class="ln2">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada
+      garis dasar ke garis dalam menampilkannya pada halaman web
+    </p>
+    <p class="ln200">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada
+      garis dasar ke garis dalam menampilkannya pada halaman web.
+    </p>
+    <p class="ln2em">
+      Properti line-height digunakan untuk mengatur jarak minimal teks pada
+      garis dasar ke garis dalam menampilkannya pada halaman web.
+    </p>
+
+    <!-- Text Indent -->
+    <p class="indent">
+      Properti text-indent digunakan untuk mengatur indentasi baris pertama dari
+      sebuah paragraf.
+    </p>
+
+    <!-- Text Align -->
+    <div class="content">
+      <p class="left">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <p class="right">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <p class="center">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+
+      <p class="justify">
+        text-align menetapkan peletakkan secara horizontal terhadap
+        konten/elemen yang bersifat inline yang berada dalam elemen block.
+      </p>
+    </div>
+
+    <!-- Text Decoration -->
+    <div class="content2">
+      <p><a href="">Teks pada elemen anchor biasa</a></p>
+      <p class="underline"><a href="">Teks pada elemen anchor biasa</a></p>
+      <p class="overline"><a href="">Teks pada elemen anchor biasa</a></p>
+      <p class="line-through"><a href="">Teks pada elemen anchor biasa</a></p>
+    </div>
+
+    <!-- Text Transform -->
+    <div class="content2">
+      <p class="none">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks
+      </p>
+      <p class="capitalize">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks
+      </p>
+      <p class="lowercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks
+      </p>
+      <p class="uppercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks
+      </p>
+    </div>
+
+    <!-- Word and Letter Spacing -->
+    <div class="content">
+      <p class="word-spacing">
+        Bandung, Kota metropoitan terbesar di Provinsi Jawa Barat
+      </p>
+      <p class="letter-spacing">
+        Bandung, Kota metropoitan terbesar di Provinsi Jawa Barat
+      </p>
+    </div>
+
+    <!-- Text Shadow -->
+    <div class="content">
+      <p class="one">
+        Bandung, Kota metropoitan terbesar di Provinsi Jawa Barat
+      </p>
+    </div>
+  </body>
+</html>
