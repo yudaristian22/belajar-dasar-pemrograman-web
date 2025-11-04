@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: #11c5c6;
+      }
+      p.lorem1 {
+        height: 75%;
+        width: 75%;
+        background-color: #fbdd1c;
+        padding: 10px;
+      }
+      .content {
+        max-width: 800px;
+        height: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+        background-color: deeppink;
+      }
+      p.lorem2 {
+        font-size: 1.5;
+        font-weight: 400;
+        color: white;
+      }
+      div.content2 {
+        height: 200px;
+        width: 200px;
+        background-color: lightgreen;
+        overflow: auto;
+      }
+      div.content3 {
+        height: 200px;
+        width: 200px;
+        background-color: lightgreen;
+        border: 10px solid cornflowerblue;
+        padding: 30px;
+
+        box-sizing: content-box;
+      }
+      div.box2 {
+        height: 200px;
+        width: 200px;
+        background-color: lightgreen;
+        border: 10px solid cornflowerblue;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Dimension -->
+      <div class="box">
+        <p class="lorem1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+          dolore beatae consectetur tempore et alias, voluptas ex inventore
+          veniam, quae nemo debitis, pariatur officiis ipsum cum labore odio id
+          enim!
+        </p>
+      </div>
+
+      <!-- Limiting Dimension -->
+      <div class="content">
+        <p class="lorem2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit beatae
+          laudantium cupiditate dolores, cumque at inventore aperiam obcaecati
+          ratione, magni autem dolor aliquam quos explicabo quia nihil
+          voluptatem ab sint.
+        </p>
+      </div>
+
+      <!--Overflowing Content -->
+      <div class="content2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          illum molestias ex distinctio doloribus impedit similique placeat
+          eius, repellat est provident, voluptate iusto id asperiores nihil
+          maxime? Maxime, debitis earum!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+          necessitatibus id exercitationem fugit distinctio numquam blanditiis,
+          placeat illo? Maxime commodi maiores quisquam quos magnam, nostrum
+          illum magni iusto quo dolorum?
+        </p>
+      </div>
+
+      <br />
+      <div class="content3"></div>
+      <p>
+        Elemen menerapkan box-sizingL conten-box; Ukuran box secara keseluruhan
+        akan menjadi 260px lebar, 260px tinggi: 260 = 200+20+20+10+10
+      </p>
+      <br />
+      <div class="box2"></div>
+      <p>
+        Elemen menerapkan box-sizing: border-box; Ukuran box akan tetap 200px
+        lebar, 200px tinggi meskipun menerapkan padding dan border
+      </p>
+    </main>
+  </body>
+</html>
