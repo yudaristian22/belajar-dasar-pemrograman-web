@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contoh Flexbox</title>
+
+    <style>
+      main {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        justify-content: center;
+        max-width: 800px;
+        min-height: 500px;
+        margin-inline: auto;
+      }
+
+      .sale-item {
+        display: flex;
+        flex-flow: column;
+        flex: 0 1 300px;
+
+        background-color: cyan;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        border: 8px solid blue;
+      }
+
+      .sale-item > img {
+        order: -1;
+        align-self: center;
+
+        width: 200px;
+        height: 200px;
+        transform: scale(1.01);
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .sale-item p {
+        margin-block: 0.5rem;
+      }
+
+      .sale-item > button {
+        margin-top: auto;
+        padding: 0.5rem 1rem;
+      }
+
+      .sale-item:last-of-type {
+        object-position: 20% center;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="deals">
+      <section class="sale-item">
+        <h1>Computer</h1>
+        <p>
+          This is the best computer money can buy, if you don’t have much money.
+        </p>
+        <ul>
+          <li>Computer</li>
+          <li>Monitor</li>
+          <li>Keyboard</li>
+          <li>Mouse</li>
+        </ul>
+        <img
+          src="assets/image/mac-os-desktop.jpg"
+          alt="You get: a white computer with matching peripherals."
+        />
+        <button>BUY NOW</button>
+      </section>
+      <section class="sale-item">
+        <h1>Smartphone</h1>
+        <p>This is the best cellphone.</p>
+        <ul>
+          <li>Cellphone</li>
+          <li>Earphone</li>
+        </ul>
+        <img
+          src="assets/image/iphone.jpg"
+          alt="You get: a white computer with matching peripherals."
+        />
+        <button>BUY NOW</button>
+      </section>
+    </main>
+  </body>
+</html>
