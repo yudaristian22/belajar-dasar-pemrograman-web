@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      main {
+        display: flex;
+
+        flex-direction: column;
+      }
+      main aside {
+        order: -1;
+      }
+      @media screen and (min-width: 400px) {
+        h1 {
+          color: red;
+        }
+        h2 {
+          color: green;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        main {
+          flex-direction: row;
+        }
+        #mainContent {
+          flex-basis: 70%;
+        }
+        main aside {
+          flex-basis: 30%;
+
+          order: 1;
+        }
+        h1 {
+          color: initial;
+        }
+        h2 {
+          color: initial;
+        }
+        h3 {
+          color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <head>
+        <h1>Penggunaan CSS Media Query</h1>
+      </head>
+
+      <div id="mainContent">
+        <h2>Lorem Ipsum</h2>
+
+        <article>
+          <h3>Lorem, Ipsum Dolor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            neque ab! Quos tempore expedita ipsum adipisci? Labore ad est nisi
+            neque. Fuga voluptate numquam asperiores rem quas consequuntur alias
+            iure?
+          </p>
+        </article>
+        <article>
+          <h3>Lorem, Ipsum Dolor,</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+            cum! Alias non voluptate et officia ducimus dolore rerum vero
+            nostrum ipsa, iusto, cupiditate eligendi officiis fugiat temporibus
+            neque? Tempora, quia!
+          </p>
+        </article>
+        <article>
+          <h3>Lorem, Ipsum Dolor,</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+            cum! Alias non voluptate et officia ducimus dolore rerum vero
+            nostrum ipsa, iusto, cupiditate eligendi officiis fugiat temporibus
+            neque? Tempora, quia!
+          </p>
+        </article>
+      </div>
+
+      <aside>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="">Lorem, Ipsum.</a></li>
+          <li><a href="">Lorem, Ipsum.</a></li>
+          <li><a href="">Lorem, Ipsum.</a></li>
+          <li><a href="">Lorem, Ipsum.</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Hak Cipta &copy; 2025</p>
+    </footer>
+  </body>
+</html>
